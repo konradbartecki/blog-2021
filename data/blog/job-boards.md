@@ -1,7 +1,7 @@
 ---
 title: Remote friendly job boards
 date: '2021-03-05'
-tags: ['remote']
+tags: ['career']
 draft: false
 summary: My remote friendly curated job boards list
 ---
