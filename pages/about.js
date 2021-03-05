@@ -27,10 +27,7 @@ export default function About() {
             <div className="flex pt-6 space-x-3">
               <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
               <SocialIcon kind="github" href={siteMetadata.github} />
-              {/* <SocialIcon kind="facebook" href={siteMetadata.facebook} /> */}
-              {/* <SocialIcon kind="youtube" href={siteMetadata.youtube} /> */}
               <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
-              {/* <SocialIcon kind="twitter" href={siteMetadata.twitter} /> */}
             </div>
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
@@ -43,17 +40,17 @@ export default function About() {
               </a>{' '}
               with good all-around knowledge about Microsoft products and services
             </p>
-            <p>
-              My tech stack:
-              <ul>
-                <li>Languages: C#, F#, SQL, PowerShell, JavaScript</li>
-                <li>Frameworks: ASP.NET, Blazor, Xamarin, WPF, UWP, Svelte</li>
-                <li>Tools: Azure, Linux, Active Directory, Office365</li>
-                <li>Favourite NuGets: FluentAssertions, Moq, NUnit</li>
-              </ul>
-            </p>
-            <blockquote>
-              <p>
+            <p>My tech stack:</p>
+            <ul>
+              <li>Languages: C#, F#, SQL, PowerShell, JavaScript</li>
+              <li>Frameworks: ASP.NET, Blazor, Xamarin, WPF, UWP, Svelte</li>
+              <li>Tools: Azure, Linux, Active Directory, Office365</li>
+              <li>Favourite NuGets: FluentAssertions, Moq, NUnit</li>
+            </ul>
+            <br />
+            <h4>Recommendations</h4>
+            <blockquote className="relative p-4 text-xl italic border-l-4 bg-neutral-100 text-neutral-600 border-neutral-500 quote">
+              <p className="recommendation-p">
                 I had a pleasure to work with Konrad for last few months. During that time Konrad
                 has been always eager to learn new technologies and seek better solutions. I
                 appreciate our countless discussions on how to improve team's productivity and
@@ -61,14 +58,29 @@ export default function About() {
                 and implement suggestions. Besides speaking only about tech stuff, we could always
                 discuss non-work related matters.
               </p>
-              <cite>
-                <a href="https://damianantonowicz.pl/">Damian Antonowicz, Microsoft MVP</a>
+              <cite className="flex items-center">
+                <img
+                  alt="Damian Antonowicz"
+                  className="w-12 mr-4 rounded-full bg-neutral-500 recommendation-pic"
+                  src="static/images/dantonowicz.jpg"
+                />
+                <div className="flex flex-col items-start">
+                  <span className="mb-1 text-sm italic font-bold">Damian Antonowicz</span>
+                  <a
+                    href="https://damianantonowicz.pl/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm"
+                  >
+                    Microsoft MVP
+                  </a>
+                </div>
               </cite>
             </blockquote>
-            <blockquote>
-              <p>
+            <blockquote className="relative p-4 text-xl italic border-l-4 bg-neutral-100 text-neutral-600 border-neutral-500 quote">
+              <p className="recommendation-p">
                 Konrad worked in Predica first as intern, than junior developer in mobile and then
-                .net technologies. I was happy to be his manager for some of his time in Predica.
+                .NET technologies. I was happy to be his manager for some of his time in Predica.
                 His first big asset is passion. He is passionate about programming, and if you give
                 him challenging projects that spark this passion, he will go to great lengths to
                 deliver it and additionally spread his passion to the team. His second big asset is
@@ -76,8 +88,23 @@ export default function About() {
                 'lay around'. I really appreciated this approach as it is so rare these days with
                 people - being proactive, not passive.
               </p>
-              <cite>
-                <a href="https://www.predicagroup.com">Andrzej Lipka, Predica Co-founder</a>
+              <cite className="flex items-center">
+                <img
+                  alt="Andrzej Lipka"
+                  className="w-12 mr-4 rounded-full bg-neutral-500 recommendation-pic"
+                  src="static/images/alipka.jpg"
+                />
+                <div className="flex flex-col items-start">
+                  <span className="mb-1 text-sm italic font-bold">Andrzej Lipka</span>
+                  <a
+                    href="https://www.predicagroup.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm"
+                  >
+                    Predica co-founder
+                  </a>
+                </div>
               </cite>
             </blockquote>
           </div>

@@ -90,6 +90,13 @@ module.exports = {
               color: theme('colors.gray.900'),
               borderLeftColor: theme('colors.gray.200'),
             },
+            '.recommendation-pic': {
+              marginTop: '0px',
+              marginBottom: '0px',
+            },
+            '.recommendation-p': {
+              marginTop: '0px',
+            },
           },
         },
         dark: {
