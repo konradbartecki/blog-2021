@@ -22,33 +22,64 @@ export default function About() {
             <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
               {siteMetadata.author}
             </h3>
-            <div className="text-gray-500 dark:text-gray-400">Professor of Atmospheric Science</div>
-            <div className="text-gray-500 dark:text-gray-400">Stanford University</div>
+            <div className="text-gray-500 dark:text-gray-400">MCSD .NET Developer</div>
+            <div className="text-gray-500 dark:text-gray-400">Based in Warsaw, Poland</div>
             <div className="flex pt-6 space-x-3">
               <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
               <SocialIcon kind="github" href={siteMetadata.github} />
-              <SocialIcon kind="facebook" href={siteMetadata.facebook} />
-              <SocialIcon kind="youtube" href={siteMetadata.youtube} />
+              {/* <SocialIcon kind="facebook" href={siteMetadata.facebook} /> */}
+              {/* <SocialIcon kind="youtube" href={siteMetadata.youtube} /> */}
               <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
-              <SocialIcon kind="twitter" href={siteMetadata.twitter} />
+              {/* <SocialIcon kind="twitter" href={siteMetadata.twitter} /> */}
             </div>
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
             <p>
-              Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His
-              research interests includes complexity modelling of tailwinds, headwinds and
-              crosswinds.
+              Konrad is a .NET developer with extensive <strong>back-end and mobile</strong>{' '}
+              background delivering projects from various industries like FinTech, data migration,
+              legacy apps support & refactor while working for companies like{' '}
+              <a href="https://www.predicagroup.com">
+                Microsoft Partner Of The Year of Poland 2015, 2020
+              </a>{' '}
+              with good all-around knowledge about Microsoft products and services
             </p>
             <p>
-              He leads the clean energy group which develops 3D air pollution-climate models, writes
-              differential equation solvers, and manufactures titanium plated air ballons. In his
-              free time he bakes raspberry pi.
+              My tech stack:
+              <ul>
+                <li>Languages: C#, F#, SQL, PowerShell, JavaScript</li>
+                <li>Frameworks: ASP.NET, Blazor, Xamarin, WPF, UWP, Svelte</li>
+                <li>Tools: Azure, Linux, Active Directory, Office365</li>
+                <li>Favourite NuGets: FluentAssertions, Moq, NUnit</li>
+              </ul>
             </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
-              placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem
-              nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
-            </p>
+            <blockquote>
+              <p>
+                I had a pleasure to work with Konrad for last few months. During that time Konrad
+                has been always eager to learn new technologies and seek better solutions. I
+                appreciate our countless discussions on how to improve team's productivity and
+                project management. On top of that, he has been always willing to listen to feedback
+                and implement suggestions. Besides speaking only about tech stuff, we could always
+                discuss non-work related matters.
+              </p>
+              <cite>
+                <a href="https://damianantonowicz.pl/">Damian Antonowicz, Microsoft MVP</a>
+              </cite>
+            </blockquote>
+            <blockquote>
+              <p>
+                Konrad worked in Predica first as intern, than junior developer in mobile and then
+                .net technologies. I was happy to be his manager for some of his time in Predica.
+                His first big asset is passion. He is passionate about programming, and if you give
+                him challenging projects that spark this passion, he will go to great lengths to
+                deliver it and additionally spread his passion to the team. His second big asset is
+                that he always came to me with questions, suggestions, did not wait for things to
+                'lay around'. I really appreciated this approach as it is so rare these days with
+                people - being proactive, not passive.
+              </p>
+              <cite>
+                <a href="https://www.predicagroup.com">Andrzej Lipka, Predica Co-founder</a>
+              </cite>
+            </blockquote>
           </div>
         </div>
       </div>
