@@ -14,7 +14,7 @@ qemu-img convert -f raw /dev/zvol/rpool/data/vm-100-disk-1 -O vhdx -o subformat=
 
 ## VMA Extract
 
-VMA is a backup format for Proxmox VMs, it has this one small disadvantage where you basically need a working Proxmox OS, however I had some success while using this docker image below:
+VMA is a backup format for Proxmox VMs, it has this one small disadvantage where you basically need a working Proxmox OS to extract it, however I had some success while using this docker image below:
 
 ```
 https://github.com/ganehag/pve-vma-docker/blob/master/Dockerfile
