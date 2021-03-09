@@ -67,7 +67,7 @@ export default function About() {
                 <div className="flex flex-col items-start">
                   <span className="mb-1 text-sm italic font-bold">Damian Antonowicz</span>
                   <a
-                    href="https://damianantonowicz.pl/"
+                    href="https://www.linkedin.com/in/damianantonowicz/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm"
