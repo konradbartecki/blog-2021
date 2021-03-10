@@ -288,3 +288,51 @@ also in some scenarios apply may be faster, for example for 20m records it's a d
 |                          In Clustered index leaf nodes are actual data itself.                           |                In Non-Clustered index leaf nodes are not the actual data itself rather they only contains included columns.                |
 |                  In Clustered index, Clustered key defines order of data within table.                   |                                   In Non-Clustered index, index key defines order of data within index.                                    |
 | A Clustered index is a type of index in which table records are physically reordered to match the index. | A Non-Clustered index is a special type of index in which logical order of index does not match physical stored order of the rows on disk. |
+
+## Update 2: C#:
+
+### Task vs Thread
+
+### Async Internals
+
+### Difference between .NET Framework and .NET Core
+
+### What is Kestrel
+
+### SOLID
+
+### Architecture patterns
+
+#### MVVM
+
+#### MVC
+
+#### MVP
+
+### Design patterns
+
+#### Adapter
+
+#### Bridge
+
+#### Decorator
+
+#### Facade
+
+#### Mediator
+
+#### Memento
+
+#### Proxy
+
+#### State
+
+#### Strategy
+
+#### Singleton
+
+### What is IoC
+
+### What is Dependency Injection
+
+### Types of scope for Microsoft DI
