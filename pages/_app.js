@@ -8,6 +8,7 @@ import Head from 'next/head'
 import { SEO } from '@/components/SEO'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import MDXComponents from '@/components/MDXComponents'
+import Analytics from '@/components/Analytics'
 
 export default function App({ Component, pageProps }) {
   return (
@@ -15,6 +16,7 @@ export default function App({ Component, pageProps }) {
       <MDXProvider components={MDXComponents}>
         <Head>
           <meta content="width=device-width, initial-scale=1" name="viewport" />
+          <Analytics />
         </Head>
         <DefaultSeo {...SEO} />
         <LayoutWrapper>
