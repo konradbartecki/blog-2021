@@ -18,3 +18,7 @@ summary: My remote friendly curated job boards list
 1. https://hnjobs.emilburzo.com/
 1. https://news.ycombinator.com/item?id=10313519
 1. https://developers.turing.com
+1. https://www.workatastartup.com/
+1. https://angel.co/jobs
+1. https://theremotework.xyz/
+1. https://www.careervault.io
