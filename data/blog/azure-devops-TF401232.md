@@ -10,7 +10,7 @@ When you are moving work items between projects/organizations then you should ma
 
 Let's say you have following csv file:
 
-```csv
+```s
 ID,Work Item Type,Title 1 ,Title 2,State,Effort,Business Value,Value Area,Tags
 "1","Feature","DevOps",,"New",,,"Business",
 "2","Feature","User account",,"New",,,"Business",
@@ -22,7 +22,7 @@ ID,Work Item Type,Title 1 ,Title 2,State,Effort,Business Value,Value Area,Tags
 
 **Make the ID column empty, so new IDs can be assigned automatically by DevOps** so it looks like this:
 
-```csv
+```s
 ID,Work Item Type,Title 1,Title 2,State,Effort,Business Value,Value Area,Tags
 "","Feature","DevOps",,"New",,,"Business",
 "","Feature","User account",,"New",,,"Business",
