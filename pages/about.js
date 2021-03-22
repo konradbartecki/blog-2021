@@ -102,7 +102,7 @@ export default function About() {
                     rel="noopener noreferrer"
                     className="text-sm"
                   >
-                    Predica co-founder
+                    CEO of Predica
                   </a>
                 </div>
               </cite>
