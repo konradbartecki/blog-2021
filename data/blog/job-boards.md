@@ -22,3 +22,4 @@ summary: My remote friendly curated job boards list
 1. https://angel.co/jobs
 1. https://theremotework.xyz/
 1. https://www.careervault.io
+1. https://www.deskhiker.com/en
