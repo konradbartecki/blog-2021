@@ -170,7 +170,7 @@ TODO
 
 Simply put a function pointer. You can specify which function to run.
 
-##### What's the difference between `Func<T, T1, etc., TResult>`
+##### What's the difference between `Func<T, T1, etc., TResult>`?
 
 Func is a sort of delegate that has up to 4 parameters and a return value.
 
@@ -181,7 +181,7 @@ Action is a sort of delegate that does not have a return value
 ##### What is a `Predicate`
 
 Predicate is a delegate that accepts one or more generic parameters and returns a Boolean value.
-Equivalent to Func<T,bool>
+Equivalent to `Func<T,bool>`
 
 ##### What's the difference between an `event`?
 
