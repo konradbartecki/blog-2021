@@ -18,6 +18,9 @@ public/sitemap.xml
 /build
 *.xml
 
+# Copied blog images (generated during build)
+/public/static/images/blog/
+
 # misc
 .DS_Store
 
