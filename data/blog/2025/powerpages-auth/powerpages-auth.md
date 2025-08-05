@@ -58,7 +58,7 @@ prompt = no
 
 [req_distinguished_name]
 # Replace with your portal's URL
-CN = yourportal.powerappsportals.com 
+CN = yourportal.powerappsportals.com
 O = Your Company Name
 C = US
 
@@ -110,7 +110,7 @@ Now, we need to tell Power Pages about our certificate by adding its thumbprint 
 
 1.  Navigate to [make.powerapps.com](https://make.powerapps.com).
 2.  Ensure you have selected the correct Dataverse environment in the top-right corner.
-3.  In the search bar, type **"Power Pages Management"** and open the app by clicking **Play**. *Note: This is a model-driven app used to manage backend settings for your portal.*
+3.  In the search bar, type **"Power Pages Management"** and open the app by clicking **Play**. _Note: This is a model-driven app used to manage backend settings for your portal._
 
 ![Screenshot showing how to find the Power Pages Management app in the Power Apps maker portal.](image_0.png)
 
@@ -119,11 +119,11 @@ Now, we need to tell Power Pages about our certificate by adding its thumbprint 
 ![Screenshot of the Power Pages Management app with the Site Settings menu item highlighted.](image_1.png)
 
 5.  Click **+ New** to create a new site setting with the following details:
-    *   **Name:** `CustomCertificates/ImplicitGrantflow`
-    *   **Website:** Select your Power Pages site from the lookup.
-    *   **Value:** Paste the certificate **thumbprint** you copied from PowerShell.
-    *   **Source** Set to `Table`
-    *   **Description:** (Optional) A brief note, e.g., "Certificate for custom Web API authentication."
+    - **Name:** `CustomCertificates/ImplicitGrantflow`
+    - **Website:** Select your Power Pages site from the lookup.
+    - **Value:** Paste the certificate **thumbprint** you copied from PowerShell.
+    - **Source** Set to `Table`
+    - **Description:** (Optional) A brief note, e.g., "Certificate for custom Web API authentication."
 
 6.  Click **Save & Close**.
 
@@ -141,7 +141,6 @@ There are two ways to do this: A) Restart the app or B) Purge the cache
 2.  Click (...) and select `Purge Cache`
 
 ![Screenshot showing the Power Platform admin center, manage portals view with an option to purge cache](image.png)
-
 
 #### Option B: Restarting the app
 
@@ -165,10 +164,10 @@ You can test this directly from your browser's developer console while logged in
 
 ```javascript
 // This snippet makes a POST request to the token endpoint
-$.post("/_services/auth/token").then(function(response) {               
-    console.log("Successfully retrieved JWT:");
-    console.log(response);
-});
+$.post('/_services/auth/token').then(function (response) {
+  console.log('Successfully retrieved JWT:')
+  console.log(response)
+})
 ```
 
 ![Screenshot showing a successful HTTP POST request on an authenticated Power Pages website to the token endpoint and resulting JWT token](image-3.png)
@@ -176,10 +175,13 @@ $.post("/_services/auth/token").then(function(response) {
 If successful, a long, encoded JWT string will be printed to the console. This is the token your client-side code will send to your custom Web API in the `Authorization` header.
 
 Example response of the `HTTP POST /_services/auth/token` endpoint
+
 ```
 eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsIm5vbmNlIjoiIn0.eyJzdWIiOiIxNTM4ZTc4NS1mYjcxLWYwMTEtYjRjYi03YzFlNTI4ODA2NzIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJmZTg0MjFiMC1hZTMyLTQzYWMtYmMxZi1kY2Y4MmFkMDQ3NzMiLCJwaG9uZV9udW1iZXIiOiIiLCJnaXZlbl9uYW1lIjoiS29ucmFkIiwiZmFtaWx5X25hbWUiOiJCYXJ0ZWNraSIsImVtYWlsIjoia29ucmFkLmJhcnRlY2tpQGtiZGV2ZG10ZXN0Lm9ubWljcm9zb2Z0LmNvbSIsImxwX3NkZXMiOlt7InR5cGUiOiJjdG1yaW5mbyIsImluZm8iOnsiY3N0YXR1cyI6bnVsbCwiY3R5cGUiOiJjb250YWN0IiwiY3VzdG9tZXJJZCI6IjE1MzhlNzg1LWZiNzEtZjAxMS1iNGNiLTdjMWU1Mjg4MDY3MiIsImJhbGFuY2UiOm51bGwsInNvY2lhbElkIjpudWxsLCJpbWVpIjoiIiwidXNlck5hbWUiOiJmZTg0MjFiMC1hZTMyLTQzYWMtYmMxZi1kY2Y4MmFkMDQ3NzMiLCJjb21wYW55U2l6ZSI6bnVsbCwiYWNjb3VudE5hbWUiOm51bGwsInJvbGUiOm51bGwsImxhc3RQYXltZW50RGF0ZSI6eyJkYXkiOjAsIm1vbnRoIjowLCJ5ZWFyIjowfSwicmVnaXN0cmF0aW9uRGF0ZSI6eyJkYXkiOjAsIm1vbnRoIjowLCJ5ZWFyIjowfX19XSwiYXVkIjoiIiwiYXBwaWQiOiIiLCJzY3AiOiI4MWViNzYxMy0zNDhkLTQ2OTctOGE5Yy1lMGNmYjYzNTllMzMiLCJpYXQiOjE3NTQ0MDI4MjgsIm5iZiI6MTc1NDQwMjgyOCwiZXhwIjoxNzU0NDAzNzI4LCJpc3MiOiJmbGVldGd1YXJkLWU1YWUucG93ZXJhcHBzcG9ydGFscy5jb20ifQ.Uj-DfLkTG_5gTHZB5sqLkX_EGJecOSTY8_wn_wVb9Y4LSsxPOX9MTLP3IkEOHdHgNjsMhmPTJrjwHBcsQ7B617tTumGF_kSInz7P3XHbX4G5LKYPNuN5ereU0qU4FO8jhA5MEbO33JztIFQWrw9RPYDFBBeuYcBh_zjy-9Yla63QhKSprPxC9WH3KGFPzUH78oY8sbKbpJFWYdI3Ij345h4K3701tXhZSBJWk3M74MK2DxnUOVWHE-S0uSrCx4_yN0zr5K9aNPu3VJO-Dqs42bj8AyG2A8qWqdxuOAatYvVrVLyLOUYo4Eqs4h0akJIEd0_mTzikCatu7ZPFKN4-rA
 ```
+
 #### Token's payload
+
 ```json
 {
   "sub": "1538e785-fb71-f011-b4cb-7c1e52880672",
@@ -228,6 +230,7 @@ eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsIm5vbmNlIjoiIn0.eyJzdWIiOiIxNTM4ZTc4NS1mYjcx
 ### **Next Steps: Validating the Token in ASP.NET**
 
 Your custom Web API must be configured to:
+
 1.  Expect a JWT in the `Authorization: Bearer <token>` header.
 2.  Fetch the public key from your portal's `/_services/auth/publickey` endpoint.
 3.  Use the public key to validate the signature of any incoming JWTs.
@@ -236,18 +239,20 @@ You can achieve this in ASP.NET using the `Microsoft.AspNetCore.Authentication.J
 
 ### **Best Practices and Security Considerations**
 
-*   **Certificate Management:** For production, use a certificate from a trusted CA. Implement a process for renewing the certificate before it expires and updating the thumbprint in your Power Pages site settings.
-*   **Secure Storage:** Store your PFX file and its password securely, for example, in Azure Key Vault. Do not commit them to source control.
-*   **Token Expiration:** The JWTs issued by Power Pages have a limited lifetime. Your API should always validate the `exp` (expiration) claim.
+- **Certificate Management:** For production, use a certificate from a trusted CA. Implement a process for renewing the certificate before it expires and updating the thumbprint in your Power Pages site settings.
+- **Secure Storage:** Store your PFX file and its password securely, for example, in Azure Key Vault. Do not commit them to source control.
+- **Token Expiration:** The JWTs issued by Power Pages have a limited lifetime. Your API should always validate the `exp` (expiration) claim.
 
 ---
+
 **References**
-- Mendes, M. (2023a) ‘Call authenticated external APIs using JavaScript from Power Pages’, michelcarlo, 16 September. Available at: https://michelcarlo.com/2023/09/16/call-authenticated-external-apis-using-javascript-from-power-pages/ (Accessed: 5 August 2025).
-- Mendes, M. (2023b) ‘Converting a certificate from .cert to .pfx to use with Power Pages OAuth2 implicit flow’, michelcarlo, 21 December. Available at: https://michelcarlo.com/2023/12/21/converting-a-certificate-from-cert-to-pfx-to-use-with-power-pages-oauth2-implicit-flow/ (Accessed: 5 August 2025).
-- Microsoft (2025a) Add custom certificates. Available at: https://learn.microsoft.com/en-us/power-pages/admin/manage-custom-certificates (Accessed: 5 August 2025).
-- Microsoft (2025b) Use OAuth 2.0 implicit grant flow in your Power Pages site. Available at: https://learn.microsoft.com/en-us/power-pages/security/oauth-implicit-grant-flow (Accessed: 5 August 2025).
-   
+
+- Mendes, M. (2023a) 'Call authenticated external APIs using JavaScript from Power Pages', michelcarlo, 16 September. Available at: [https://michelcarlo.com/2023/09/16/call-authenticated-external-apis-using-javascript-from-power-pages/](https://michelcarlo.com/2023/09/16/call-authenticated-external-apis-using-javascript-from-power-pages/) (Accessed: 5 August 2025).
+- Mendes, M. (2023b) 'Converting a certificate from .cert to .pfx to use with Power Pages OAuth2 implicit flow', michelcarlo, 21 December. Available at: [https://michelcarlo.com/2023/12/21/converting-a-certificate-from-cert-to-pfx-to-use-with-power-pages-oauth2-implicit-flow/](https://michelcarlo.com/2023/12/21/converting-a-certificate-from-cert-to-pfx-to-use-with-power-pages-oauth2-implicit-flow/) (Accessed: 5 August 2025).
+- Microsoft (2025a) Add custom certificates. Available at: [https://learn.microsoft.com/en-us/power-pages/admin/manage-custom-certificates](https://learn.microsoft.com/en-us/power-pages/admin/manage-custom-certificates) (Accessed: 5 August 2025).
+- Microsoft (2025b) Use OAuth 2.0 implicit grant flow in your Power Pages site. Available at: [https://learn.microsoft.com/en-us/power-pages/security/oauth-implicit-grant-flow](https://learn.microsoft.com/en-us/power-pages/security/oauth-implicit-grant-flow) (Accessed: 5 August 2025).
 
 **Useful links**
-*   [Power Pages Maker Portal](https://make.powerpages.microsoft.com/)
-*   [New Power Platform admin center / Manage / Portals](https://admin.powerplatform.microsoft.com/manage/portals)
+
+- [Power Pages Maker Portal](https://make.powerpages.microsoft.com/)
+- [New Power Platform admin center / Manage / Portals](https://admin.powerplatform.microsoft.com/manage/portals)
