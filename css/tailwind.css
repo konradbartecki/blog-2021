@@ -17,3 +17,34 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Make blog images larger and more readable */
+.prose img {
+  @apply cursor-pointer transition-transform hover:scale-105;
+  max-width: none !important;
+  width: 100%;
+  height: auto;
+}
+
+/* Override prose max-width for images on larger screens */
+@media (min-width: 1024px) {
+  .prose img {
+    margin-left: -4rem;
+    margin-right: -4rem;
+    width: calc(100% + 8rem);
+  }
+}
+
+/* Ensure images don't overflow on mobile */
+@media (max-width: 768px) {
+  .prose img {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+/* Add shadow and border to images for better visibility */
+.prose img {
+  @apply shadow-lg border border-gray-200 dark:border-gray-700 rounded-lg;
+}

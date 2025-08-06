@@ -92,6 +92,12 @@ module.exports = {
             '.recommendation-p': {
               marginTop: '0px',
             },
+            img: {
+              marginTop: '2rem',
+              marginBottom: '2rem',
+              borderRadius: '0.5rem',
+              boxShadow: theme('boxShadow.xl'),
+            },
           },
         },
         dark: {
@@ -144,6 +150,12 @@ module.exports = {
             blockquote: {
               color: theme('colors.gray.100'),
               borderLeftColor: theme('colors.gray.700'),
+            },
+            img: {
+              marginTop: '2rem',
+              marginBottom: '2rem',
+              borderRadius: '0.5rem',
+              boxShadow: theme('boxShadow.xl'),
             },
           },
         },
